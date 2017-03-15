@@ -1,0 +1,13 @@
+clc;clear all;close all;
+fs=44100;
+t=0.1:1/fs:1;
+x=sin(2*pi*440*t);
+x2=sin(2*pi*880*t);
+sound(x,fs);
+x3=x+x2;
+figure(1);
+plot(x(1:200));
+figure(2);
+plot(x2(1:200));
+figure(3);
+plot(x3(1:200));
